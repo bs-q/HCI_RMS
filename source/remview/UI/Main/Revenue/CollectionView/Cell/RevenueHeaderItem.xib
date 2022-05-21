@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sf_bold.otf">
+            <string>SFCompactDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RevenueHeaderItem" customModule="remview" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="RevenueHeaderItem" customModule="remview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zpM-xk-poW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYv-6c-EYp">
+                            <rect key="frame" x="10" y="16.5" width="34.5" height="17"/>
+                            <fontDescription key="fontDescription" name="SFCompactDisplay-Bold" family="SF Compact Display" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="main_background"/>
+                    <constraints>
+                        <constraint firstItem="nYv-6c-EYp" firstAttribute="centerY" secondItem="zpM-xk-poW" secondAttribute="centerY" id="QoY-gE-lof"/>
+                        <constraint firstItem="nYv-6c-EYp" firstAttribute="leading" secondItem="zpM-xk-poW" secondAttribute="leading" constant="10" id="uSU-W8-MlZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="zpM-xk-poW" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="FHf-8X-zjZ"/>
+                <constraint firstAttribute="trailing" secondItem="zpM-xk-poW" secondAttribute="trailing" id="Tw9-QN-CwJ"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="zpM-xk-poW" secondAttribute="bottom" id="Y8Y-nf-9Ox"/>
+                <constraint firstItem="zpM-xk-poW" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="lBR-nE-IO8"/>
+            </constraints>
+            <connections>
+                <outlet property="name" destination="nYv-6c-EYp" id="zdf-jx-HwZ"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="81"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <namedColor name="main_background">
+            <color red="0.13300000131130219" green="0.13300000131130219" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

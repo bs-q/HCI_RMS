@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sf_bold.otf">
+            <string>SFCompactDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--News Detail View Controller-->
+        <scene sceneID="2sh-pj-GjY">
+            <objects>
+                <viewController storyboardIdentifier="NewsDetailViewController" id="haW-Uh-ZsR" customClass="NewsDetailViewController" customModule="remview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j7W-GP-m9L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcZ-pJ-vdN">
+                                <rect key="frame" x="0.0" y="98" width="414" height="764"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zzm-pO-Fmm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="54"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.backward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="j5v-En-vjG">
+                                        <rect key="frame" x="10" y="16.5" width="26" height="21"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="KQx-Dz-gVN"/>
+                                            <constraint firstAttribute="width" constant="26" id="rWI-R0-Uou"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="ffs-7W-gaZ" appends="YES" id="Ls7-rF-0ar"/>
+                                        </connections>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCD-pq-eze">
+                                        <rect key="frame" x="182" y="15" width="50.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="SFCompactDisplay-Bold" family="SF Compact Display" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="header_background"/>
+                                <constraints>
+                                    <constraint firstItem="j5v-En-vjG" firstAttribute="leading" secondItem="Zzm-pO-Fmm" secondAttribute="leading" constant="10" id="HjQ-e5-fLc"/>
+                                    <constraint firstItem="QCD-pq-eze" firstAttribute="centerX" secondItem="Zzm-pO-Fmm" secondAttribute="centerX" id="YXy-zW-70M"/>
+                                    <constraint firstAttribute="height" constant="54" id="ZxY-RO-ZEc"/>
+                                    <constraint firstItem="j5v-En-vjG" firstAttribute="centerY" secondItem="Zzm-pO-Fmm" secondAttribute="centerY" id="dVa-ud-pKS"/>
+                                    <constraint firstItem="QCD-pq-eze" firstAttribute="centerY" secondItem="Zzm-pO-Fmm" secondAttribute="centerY" id="wyR-lq-GsJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PQi-4t-lXL"/>
+                        <color key="backgroundColor" name="main_background"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="PQi-4t-lXL" firstAttribute="trailing" secondItem="Zzm-pO-Fmm" secondAttribute="trailing" id="0H9-23-UMP"/>
+                            <constraint firstItem="pcZ-pJ-vdN" firstAttribute="leading" secondItem="PQi-4t-lXL" secondAttribute="leading" id="5GC-RT-c0b"/>
+                            <constraint firstItem="PQi-4t-lXL" firstAttribute="trailing" secondItem="pcZ-pJ-vdN" secondAttribute="trailing" id="8ZZ-fn-ywD"/>
+                            <constraint firstItem="pcZ-pJ-vdN" firstAttribute="top" secondItem="Zzm-pO-Fmm" secondAttribute="bottom" id="Q1J-GO-wRu"/>
+                            <constraint firstItem="Zzm-pO-Fmm" firstAttribute="leading" secondItem="PQi-4t-lXL" secondAttribute="leading" id="QX9-jw-mAv"/>
+                            <constraint firstItem="Zzm-pO-Fmm" firstAttribute="top" secondItem="PQi-4t-lXL" secondAttribute="top" id="Wgx-hg-TYz"/>
+                            <constraint firstItem="PQi-4t-lXL" firstAttribute="bottom" secondItem="pcZ-pJ-vdN" secondAttribute="bottom" id="Xa9-l9-8fW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mWebView" destination="pcZ-pJ-vdN" id="vrM-K4-UNM"/>
+                        <outlet property="webTitle" destination="QCD-pq-eze" id="BRS-kH-j0n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SN5-yi-xSt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ffs-7W-gaZ" userLabel="back">
+                    <connections>
+                        <action selector="back:" destination="haW-Uh-ZsR" id="Nqg-nT-eTj"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-828.98550724637687" y="-552.45535714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
+        <namedColor name="header_background">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="main_background">
+            <color red="0.13300000131130219" green="0.13300000131130219" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

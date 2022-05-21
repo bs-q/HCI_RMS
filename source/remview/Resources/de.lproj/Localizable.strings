@@ -1,0 +1,132 @@
+/*
+ Ref:
+    https://medium.com/swlh/app-localization-in-swift-ios-swift-guide-baa2c2e4298e
+ Step:
+    - File > New > File -> choose strings
+    - Name file: Localizable.strings
+    - Click to file Localizable.strings -> Then on the right panel, click on the Localized… button.
+ Add new language:
+    Click on project setting -> tab Info -> Localization -> click + button
+ 
+ 
+*/
+"loading_msg" = "Warten Sie mal...";
+"confirm_ok" = "OK";
+"continue" = "Continue";
+"back" = "Back";
+"error" = "Error occurred, please try again later";
+// alert
+"restaurant_msg" = "Sie haben kein Restaurant ausgewählt";
+"restaurant_delete" = "Möchten Sie dieses Restaurant wirklich löschen?";
+"restaurant_delete_success" = "Restauranterfolg löschen";
+"qr_error" = "Beim Validieren des QR-Codes ist ein Fehler aufgetreten";
+// active
+"close" = "Nah dran";
+"active_msg" = "Bitte wenden Sie sich zur Aktivierung an Ihren Lieferanten";
+"check" = "Überprüfen";
+// edit
+"edit_msg" = "Restaurantnamen bearbeiten";
+"yes" = "Zustimmen";
+"no" = "Stornieren";
+
+// revenue
+"revenuesale" = "Verkaufsliste";
+"revenuecancel" = "Bestellliste";
+"typeincome" = "Geld nach Warengruppe";
+"monthincome" = "Einkommen nach Tag des Monats";
+"incomedayofweek" = "Einnahmen nach Wochentag";
+"memberincome" = "Einkommen pro Mitarbeiter";
+"houseincome" = "Einkommen innerhalb/außerhalb des Hauses";
+"machineincome" = "Geld per Drucker";
+"quantityincome" = "Geld nach Stückzahl";
+"weekincome" = "Einnahmen nach Wochentag";
+"incomehour" = "Stundenlohn";
+"sell_list" = "Verkaufsliste";
+"analytic" = "Statistische Analyse";
+"currentrevenue" = "Laufende Einnahmen";
+
+// revenue -> sell
+"sellinglist" = "Verkaufsliste";
+"totalmoney" = "Total Geld";
+
+// revnue -> sell -> tableview
+"ID" = "ID";
+"time" = "Zeit";
+"tablenumber" = "Zahlentabelle";
+"total" = "Total Geld";
+
+// revnue -> sell -> sell detail
+"employee" = "Mitarbeiter";
+"table" = "Tisch";
+"tabletype" = "Art des Verkaufs";
+
+
+// revenue -> detail
+"sales" = "Verkauf";
+"REVENUE" = "EINNAHMEN";
+
+// revenue -> order
+"canceler" = "Stornierer";
+"orderer" = "Besteller";
+"orderlist" = "Bestellliste";
+
+// tab
+"store" = "das Geschäft";
+"revenue" = "Einnahmen";
+"control" = "Kontrolle";
+"news" = "Nachrichten";
+
+// control
+
+"printbill" = "Druckbericht";
+"employeemoney" = "Mitarbeiterabrechnung";
+"openteamview" = "Teamviewer einschalten";
+"opentunnel" = "Teamviewer einschalten";
+"control" = "Kontrolle";
+
+// control -> employee
+"employeebilling" = "Mitarbeiterabrechnung";
+
+// control -> employee detail
+"TOTALMONEY" = "TOTAL GELD";
+
+// language
+"vi" = "Vietnamesisch";
+"en" = "Englisch";
+"de" = "Deutsch";
+
+// store
+"listofrestaurant" = "Liste der Restaurants";
+"allrestaurants" = "Alle Gaststätten";
+"lastvisited" = "Zuletzt besucht";
+
+// news
+"news" = "Nachrichten";
+
+// settings
+"employeepayment" = "Mitarbeiterzahlung";
+"summaryofdaysandmonths" = "Zusammenfassung der Tage und Monate";
+"permission" = "Erlaubnis";
+"editpermission" = "Berechtigung bearbeiten";
+"edititem" = "Element bearbeiten";
+
+
+// permission
+"four" = "Người sử dụng có toàn quyển quản lý hệ thống";
+"sixfour" = "Người sử dụng là lái xe";
+"onetwoeight" = "Người sử dụng được phép chỉnh sửa mặt hàng";
+"one" = "Người sử dụng được phép xem danh sách bán của mình";
+"twofivesix" = "Người sử dụng được phép in báo cáo thu nhập của mình";
+"fiveonetwo" = "Người sử dụng được chuyển món ăn giữa các bàn";
+"onezerotwofour" = "Người sử dụng có quyền huỷ mặt hàng vừa bấm sai";
+"two" = "Người sử dụng có quyền huỷ mặt hàng đã được đặt sai";
+"twozerofoureight" = "Người sử dụng được phép đặt đồ ăn ở bàn khác";
+"threetwo" = "Người sử dụng được quyền thay đổi mức giá hoặc giảm giá";
+"fourzeroninesix" = "Người sử dụng được phép sửa lại cách trả tiền";
+"eight" = "Người sử dụng có quyền kết thúc cuối ngày";
+"onesix" = "Người sử dụng có quyền thoát hệ thống";
+"updatepermissionmsg" = "Update permission success";
+"name" = "Tên";
+"password" = "Mật mã";
+"nfc" = "Dữ liệu NFC";
+"save" = "Save";

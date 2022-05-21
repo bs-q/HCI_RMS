@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sf_bold.otf">
+            <string>SFCompactDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Employee View Controller-->
+        <scene sceneID="1u1-cP-odP">
+            <objects>
+                <viewController storyboardIdentifier="EmployeeViewController" id="LrV-Zl-n5a" customClass="EmployeeViewController" customModule="remview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9K3-ca-S7n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="945"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="div-4J-FIX">
+                                <rect key="frame" x="0.0" y="44" width="375" height="54"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="j6T-eC-Mje">
+                                        <rect key="frame" x="10" y="14" width="26" height="26"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="26" id="GgX-kN-iIw"/>
+                                            <constraint firstAttribute="height" constant="26" id="qWY-we-nhf"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="QRR-Zx-HpQ" appends="YES" id="eos-MR-v1E"/>
+                                        </connections>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee billing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MY5-Xj-e5I">
+                                        <rect key="frame" x="112.5" y="15" width="150" height="24"/>
+                                        <fontDescription key="fontDescription" name="SFCompactDisplay-Bold" family="SF Compact Display" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="header_background"/>
+                                <constraints>
+                                    <constraint firstItem="j6T-eC-Mje" firstAttribute="centerY" secondItem="div-4J-FIX" secondAttribute="centerY" id="LXz-Ak-kEw"/>
+                                    <constraint firstItem="MY5-Xj-e5I" firstAttribute="centerX" secondItem="div-4J-FIX" secondAttribute="centerX" id="db7-GF-Vq4"/>
+                                    <constraint firstItem="MY5-Xj-e5I" firstAttribute="centerY" secondItem="div-4J-FIX" secondAttribute="centerY" id="iyz-PI-6Pf"/>
+                                    <constraint firstItem="j6T-eC-Mje" firstAttribute="leading" secondItem="div-4J-FIX" secondAttribute="leading" constant="10" id="qaX-1a-PuT"/>
+                                    <constraint firstAttribute="height" constant="54" id="t0X-7E-TuP"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1SL-mj-Gwc">
+                                <rect key="frame" x="10" y="108" width="355" height="793"/>
+                                <connections>
+                                    <segue destination="iC3-sa-p6k" kind="embed" identifier="EmployeeCollectionViewController" id="vWZ-RH-HvU"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QFC-qj-lle"/>
+                        <color key="backgroundColor" name="main_background"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="1SL-mj-Gwc" firstAttribute="top" secondItem="div-4J-FIX" secondAttribute="bottom" constant="10" id="1Xx-Mz-1xU"/>
+                            <constraint firstItem="1SL-mj-Gwc" firstAttribute="leading" secondItem="9K3-ca-S7n" secondAttribute="leading" constant="10" id="Bh9-gw-q2n"/>
+                            <constraint firstItem="div-4J-FIX" firstAttribute="top" secondItem="QFC-qj-lle" secondAttribute="top" id="FGl-Br-Id8"/>
+                            <constraint firstItem="div-4J-FIX" firstAttribute="leading" secondItem="9K3-ca-S7n" secondAttribute="leading" id="SeX-1b-BgZ"/>
+                            <constraint firstAttribute="trailing" secondItem="1SL-mj-Gwc" secondAttribute="trailing" constant="10" id="WLk-4U-yFf"/>
+                            <constraint firstItem="QFC-qj-lle" firstAttribute="bottom" secondItem="1SL-mj-Gwc" secondAttribute="bottom" constant="10" id="gKR-a1-2tC"/>
+                            <constraint firstAttribute="trailing" secondItem="div-4J-FIX" secondAttribute="trailing" id="mRK-MB-TTB"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="945"/>
+                    <connections>
+                        <outlet property="headerTitle" destination="MY5-Xj-e5I" id="XH3-dP-WRg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aF9-eY-5eG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="QRR-Zx-HpQ">
+                    <connections>
+                        <action selector="back:" destination="LrV-Zl-n5a" id="Lkl-IX-laE"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-3505" y="-424"/>
+        </scene>
+        <!--Employee Collection View Controller-->
+        <scene sceneID="W9Q-HU-B6t">
+            <objects>
+                <collectionViewController storyboardIdentifier="EmployeeCollectionViewController" id="iC3-sa-p6k" customClass="EmployeeCollectionViewController" customModule="remview" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="1Ht-5i-u7f">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="793"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="Yxk-Nq-pj7">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="iC3-sa-p6k" id="Xlc-kl-HZl"/>
+                            <outlet property="delegate" destination="iC3-sa-p6k" id="14M-U7-lkq"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5xl-35-HwI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2694" y="-365"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="12" height="11"/>
+        <namedColor name="header_background">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="main_background">
+            <color red="0.13300000131130219" green="0.13300000131130219" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

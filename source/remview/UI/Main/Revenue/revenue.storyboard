@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sf_bold.otf">
+            <string>SFCompactDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Revenue-->
+        <scene sceneID="md9-56-3Tq">
+            <objects>
+                <viewController storyboardIdentifier="RevenueDetailViewController" id="VxI-md-gdd" customClass="RevenueDetailViewController" customModule="remview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cgq-fu-lk9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="945"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svT-3l-WXU">
+                                <rect key="frame" x="0.0" y="44" width="375" height="54"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="g6E-A1-was">
+                                        <rect key="frame" x="10" y="14" width="26" height="26"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="AQA-y1-Eit"/>
+                                            <constraint firstAttribute="width" constant="26" id="BKt-kj-tFk"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="2J9-SP-oTu" appends="YES" id="wlr-Yy-qoo"/>
+                                        </connections>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWT-dm-Rvv">
+                                        <rect key="frame" x="163" y="15" width="49" height="24"/>
+                                        <fontDescription key="fontDescription" name="SFCompactDisplay-Bold" family="SF Compact Display" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="header_background"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="ahv-E6-s6E"/>
+                                    <constraint firstItem="g6E-A1-was" firstAttribute="leading" secondItem="svT-3l-WXU" secondAttribute="leading" constant="10" id="i5x-DC-SjA"/>
+                                    <constraint firstItem="fWT-dm-Rvv" firstAttribute="centerX" secondItem="svT-3l-WXU" secondAttribute="centerX" id="p64-zo-eh1"/>
+                                    <constraint firstItem="g6E-A1-was" firstAttribute="centerY" secondItem="svT-3l-WXU" secondAttribute="centerY" id="t3J-jB-Y9L"/>
+                                    <constraint firstItem="fWT-dm-Rvv" firstAttribute="centerY" secondItem="svT-3l-WXU" secondAttribute="centerY" id="viG-GB-M6v"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6R-mg-BbV">
+                                <rect key="frame" x="10" y="108" width="355" height="19.5"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Bold" family="SF Compact Display" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3C-h9-uXB">
+                                <rect key="frame" x="10" y="282" width="355" height="619"/>
+                                <connections>
+                                    <segue destination="XEU-NV-wWO" kind="embed" identifier="RevenueDetailCollectionViewController" id="bF4-PZ-1yF"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REVENUE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUO-6I-qnh">
+                                <rect key="frame" x="149" y="164.5" width="77" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Bold" family="SF Compact Display" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SH7-qA-f7v">
+                                <rect key="frame" x="174" y="199" width="27.5" height="55"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Bold" family="SF Compact Display" pointSize="46"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YcK-xF-9vS"/>
+                        <color key="backgroundColor" name="main_background"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="h6R-mg-BbV" firstAttribute="top" secondItem="svT-3l-WXU" secondAttribute="bottom" constant="10" id="0YK-fz-L5A"/>
+                            <constraint firstItem="YcK-xF-9vS" firstAttribute="bottom" secondItem="e3C-h9-uXB" secondAttribute="bottom" constant="10" id="G22-IW-oRG"/>
+                            <constraint firstItem="YcK-xF-9vS" firstAttribute="trailing" secondItem="svT-3l-WXU" secondAttribute="trailing" id="KED-Bv-RVi"/>
+                            <constraint firstItem="mUO-6I-qnh" firstAttribute="top" secondItem="h6R-mg-BbV" secondAttribute="bottom" constant="37" id="Miy-BU-ZJE"/>
+                            <constraint firstItem="YcK-xF-9vS" firstAttribute="trailing" secondItem="e3C-h9-uXB" secondAttribute="trailing" constant="10" id="NqK-XV-YZG"/>
+                            <constraint firstItem="YcK-xF-9vS" firstAttribute="trailing" secondItem="h6R-mg-BbV" secondAttribute="trailing" constant="10" id="P6F-vD-XJ0"/>
+                            <constraint firstItem="SH7-qA-f7v" firstAttribute="centerX" secondItem="Cgq-fu-lk9" secondAttribute="centerX" id="Qlw-Nc-PLJ"/>
+                            <constraint firstItem="h6R-mg-BbV" firstAttribute="leading" secondItem="YcK-xF-9vS" secondAttribute="leading" constant="10" id="ZaK-Sd-r4M"/>
+                            <constraint firstItem="svT-3l-WXU" firstAttribute="top" secondItem="YcK-xF-9vS" secondAttribute="top" id="bAl-eI-mpz"/>
+                            <constraint firstItem="e3C-h9-uXB" firstAttribute="leading" secondItem="YcK-xF-9vS" secondAttribute="leading" constant="10" id="fOL-z7-iRg"/>
+                            <constraint firstItem="SH7-qA-f7v" firstAttribute="top" secondItem="mUO-6I-qnh" secondAttribute="bottom" constant="13" id="sHB-mX-OGn"/>
+                            <constraint firstItem="e3C-h9-uXB" firstAttribute="top" secondItem="SH7-qA-f7v" secondAttribute="bottom" constant="28" id="trS-lf-Qqi"/>
+                            <constraint firstItem="svT-3l-WXU" firstAttribute="leading" secondItem="YcK-xF-9vS" secondAttribute="leading" id="z2w-Gn-Qvg"/>
+                            <constraint firstItem="mUO-6I-qnh" firstAttribute="centerX" secondItem="Cgq-fu-lk9" secondAttribute="centerX" id="zUt-FS-Id7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Revenue" image="pay_date" id="izc-9B-MSP"/>
+                    <size key="freeformSize" width="375" height="945"/>
+                    <connections>
+                        <outlet property="restaurantName" destination="fWT-dm-Rvv" id="hcL-qb-qPb"/>
+                        <outlet property="revenue" destination="mUO-6I-qnh" id="ChS-Ic-lS3"/>
+                        <outlet property="sales" destination="h6R-mg-BbV" id="w4q-2F-W7d"/>
+                        <outlet property="total" destination="SH7-qA-f7v" id="Bsk-me-Ugp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTC-sh-6cy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="2J9-SP-oTu">
+                    <connections>
+                        <action selector="back:" destination="VxI-md-gdd" id="wP6-Ry-WB1"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1666.4000000000001" y="-507.79610194902551"/>
+        </scene>
+        <!--Revenue Detail Collection View Controller-->
+        <scene sceneID="SIL-p3-580">
+            <objects>
+                <collectionViewController storyboardIdentifier="RevenueDetailCollectionViewController" id="XEU-NV-wWO" customClass="RevenueDetailCollectionViewController" customModule="remview" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="cXB-uF-7ak">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="619"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="UlQ-59-af8">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="XEU-NV-wWO" id="9ef-t5-EM7"/>
+                            <outlet property="delegate" destination="XEU-NV-wWO" id="Tik-5c-8xG"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f1h-ws-66D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-701" y="-550"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="12" height="11"/>
+        <image name="pay_date" width="36" height="36"/>
+        <namedColor name="header_background">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="main_background">
+            <color red="0.13300000131130219" green="0.13300000131130219" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,178 @@
+PODS:
+  - Alamofire (5.4.0)
+  - CropViewController (2.6.1)
+  - DropDown (2.3.13)
+  - Fastis (1.0.13):
+    - JTAppleCalendar (~> 8.0.0)
+    - PrettyCards (~> 1.0.0)
+    - SnapKit (~> 5.0.0)
+  - Firebase/Auth (8.15.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 8.15.0)
+  - Firebase/CoreOnly (8.15.0):
+    - FirebaseCore (= 8.15.0)
+  - FirebaseAuth (8.15.0):
+    - FirebaseCore (~> 8.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GTMSessionFetcher/Core (~> 1.5)
+  - FirebaseCore (8.15.0):
+    - FirebaseCoreDiagnostics (~> 8.0)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/Logger (~> 7.7)
+  - FirebaseCoreDiagnostics (8.15.0):
+    - GoogleDataTransport (~> 9.1)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/Logger (~> 7.7)
+    - nanopb (~> 2.30908.0)
+  - GoogleDataTransport (9.1.2):
+    - GoogleUtilities/Environment (~> 7.2)
+    - nanopb (~> 2.30908.0)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleMaps (6.2.0):
+    - GoogleMaps/Maps (= 6.2.0)
+  - GoogleMaps/Base (6.2.0)
+  - GoogleMaps/Maps (6.2.0):
+    - GoogleMaps/Base
+  - GoogleUtilities/AppDelegateSwizzler (7.7.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.7.0):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.7.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/Network (7.7.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.7.0)"
+  - GoogleUtilities/Reachability (7.7.0):
+    - GoogleUtilities/Logger
+  - GRDB.swift (5.8.0):
+    - GRDB.swift/standard (= 5.8.0)
+  - GRDB.swift/standard (5.8.0)
+  - GTMSessionFetcher/Core (1.7.1)
+  - JTAppleCalendar (8.0.3)
+  - Kingfisher (6.3.1)
+  - MKRingProgressView (2.3.0)
+  - nanopb (2.30908.0):
+    - nanopb/decode (= 2.30908.0)
+    - nanopb/encode (= 2.30908.0)
+  - nanopb/decode (2.30908.0)
+  - nanopb/encode (2.30908.0)
+  - ObjectMapper (3.5.0)
+  - PrettyCards (1.0.5)
+  - PromisesObjC (2.1.0)
+  - QRCodeReader.swift (10.1.0)
+  - ReachabilitySwift (5.0.0)
+  - Resolver (1.5.0)
+  - RxAlamofire (6.1.0):
+    - RxAlamofire/Core (= 6.1.0)
+  - RxAlamofire/Core (6.1.0):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 6.0)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxGRDB (2.0.0):
+    - RxGRDB/default (= 2.0.0)
+    - RxSwift (~> 6.0)
+  - RxGRDB/default (2.0.0):
+    - GRDB.swift (~> 5.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+  - SnapKit (5.0.0)
+  - Starscream (4.0.4)
+
+DEPENDENCIES:
+  - Alamofire (= 5.4)
+  - CropViewController
+  - DropDown
+  - Fastis (~> 1.0.0)
+  - Firebase/Auth
+  - GoogleMaps
+  - GRDB.swift (= 5.8.0)
+  - Kingfisher (~> 6.0)
+  - MKRingProgressView
+  - ObjectMapper (= 3.5)
+  - QRCodeReader.swift (~> 10.1.0)
+  - ReachabilitySwift
+  - Resolver
+  - RxAlamofire (= 6.1)
+  - RxCocoa (= 6.2.0)
+  - RxGRDB
+  - RxSwift (= 6.2.0)
+  - SnapKit (= 5.0.0)
+  - Starscream (~> 4.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CropViewController
+    - DropDown
+    - Fastis
+    - Firebase
+    - FirebaseAuth
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - GoogleDataTransport
+    - GoogleMaps
+    - GoogleUtilities
+    - GRDB.swift
+    - GTMSessionFetcher
+    - JTAppleCalendar
+    - Kingfisher
+    - MKRingProgressView
+    - nanopb
+    - ObjectMapper
+    - PrettyCards
+    - PromisesObjC
+    - QRCodeReader.swift
+    - ReachabilitySwift
+    - Resolver
+    - RxAlamofire
+    - RxCocoa
+    - RxGRDB
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - Starscream
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  CropViewController: 58fb440f30dac788b129d2a1f24cffdcb102669c
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  Fastis: 2af7d2c66bb8f82bdce24696bfd19f898a9d8261
+  Firebase: 5f8193dff4b5b7c5d5ef72ae54bb76c08e2b841d
+  FirebaseAuth: 3e73bf8abf4fbb40f8b421f361f4cc48ee57388c
+  FirebaseCore: 5743c5785c074a794d35f2fff7ecc254a91e08b1
+  FirebaseCoreDiagnostics: 92e07a649aeb66352b319d43bdd2ee3942af84cb
+  GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
+  GoogleMaps: c1b9de14cecc940b2d334dd4e6dfa116bff4a40e
+  GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+  GRDB.swift: 9b9beec114435e1d852ad68c136cff4c71134627
+  GTMSessionFetcher: 4577a4cc914a5a07c40a8a0ad0acc22080418c2d
+  JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  MKRingProgressView: f534209b9a1edc0beb2ea613e6b953ea2195b565
+  nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  ObjectMapper: 078b564ed25c6578b62588e306bf1da3924636d4
+  PrettyCards: 2b078f2396a42f7f0c4d6624b875149dcb49d3ed
+  PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
+  QRCodeReader.swift: 373a389fe9a22d513c879a32a6f647c58f4ef572
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
+  RxAlamofire: 27d77b94881fb308b679b70d0799f74c649df1e3
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxGRDB: 2ed9c18392c87b34d7a085d03831b4081d30e64e
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+
+PODFILE CHECKSUM: 1ed95077ac137fbb74cb41bf2a155b1b9c550dee
+
+COCOAPODS: 1.11.2

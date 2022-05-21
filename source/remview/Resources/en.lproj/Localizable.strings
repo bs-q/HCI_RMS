@@ -1,0 +1,131 @@
+/* 
+ Ref:
+    https://medium.com/swlh/app-localization-in-swift-ios-swift-guide-baa2c2e4298e
+ Step:
+    - File > New > File -> choose strings
+    - Name file: Localizable.strings
+    - Click to file Localizable.strings -> Then on the right panel, click on the Localized… button.
+ Add new language:
+    Click on project setting -> tab Info -> Localization -> click + button
+ 
+ 
+*/
+"loading_msg" = "Please wait...";
+"confirm_ok" = "OK";
+"continue" = "Continue";
+"back" = "Back";
+"error" = "Error occurred, please try again later";
+// alert
+"restaurant_msg" = "You have not selected a restaurant";
+"restaurant_delete" = " Do you really want to delete this restaurant?";
+"restaurant_delete_success" = "Delete restaurant success";
+"qr_error" = "An error occurred while validating the QR code";
+// active
+"close" = "Close";
+"active_msg" = "Please contact your supplier for activation";
+"check" = "Check";
+// edit
+"edit_msg" = "Edit restaurant name";
+"yes" = "Yes";
+"no" = "No";
+
+// revenue
+"revenuesale" = "Selling List";
+"revenuecancel" = "Order List";
+"typeincome" = "Money by commodity group";
+"monthincome" = "Income by day of the month";
+"incomedayofweek" = "Earnings by day of the week";
+"memberincome" = "Income per employee";
+"houseincome" = "Income by inside/outside the house";
+"machineincome" = "Money by printer";
+"quantityincome" = "Money according to the number of items";
+"weekincome" = "Earnings by day of the week";
+"incomehour" = "Hourly earnings";
+"sell_list" = "Selling list";
+"analytic" = "Statistical analysis";
+"currentrevenue" = "Current revenue";
+
+// revenue -> sell
+"sellinglist" = "Selling list";
+"totalmoney" = "Total money";
+
+// revnue -> sell -> tableview
+"ID" = "ID";
+"time" = "Time";
+"tablenumber" = "Table number";
+"total" = "Total";
+
+// revnue -> sell -> sell detail
+"employee" = "Employee";
+"table" = "Table";
+"tabletype" = "Type of sale";
+
+
+// revenue -> detail
+"sales" = "Sales";
+"REVENUE" = "REVENUE";
+
+// revenue -> order
+"canceler" = "Canceler";
+"orderer" = "Orderer";
+"orderlist" = "Ordering list";
+
+// tab
+"store" = "Store";
+"revenue" = "Revenue";
+"control" = "Control";
+"news" = "News";
+
+// control
+
+"printbill" = "Print report";
+"employeemoney" = "Employee billing";
+"openteamview" = "Turn on Teamviewer";
+"opentunnel" = "Turn on Tunnel";
+"control" = "Control";
+
+// control -> employee
+"employeebilling" = "Employee Billing";
+
+// control -> employee detail
+"TOTALMONEY" = "TOTAL MONEY";
+
+// language
+"vi" = "Vietnamese";
+"en" = "English";
+"de" = "German";
+
+// store
+"listofrestaurant" = "List of restaurants";
+"allrestaurants" = "All restaurant";
+"lastvisited" = "Last visited";
+
+// news
+"news" = "News";
+
+// settings
+"employeepayment" = "Employee payment";
+"summaryofdaysandmonths" = "Summary of days and months";
+"permission" = "Permission";
+"editpermission" = "Edit permission";
+"edititem" = "Edit item";
+
+// permission
+"four" = "Người sử dụng có toàn quyển quản lý hệ thống";
+"sixfour" = "Người sử dụng là lái xe";
+"onetwoeight" = "Người sử dụng được phép chỉnh sửa mặt hàng";
+"one" = "Người sử dụng được phép xem danh sách bán của mình";
+"twofivesix" = "Người sử dụng được phép in báo cáo thu nhập của mình";
+"fiveonetwo" = "Người sử dụng được chuyển món ăn giữa các bàn";
+"onezerotwofour" = "Người sử dụng có quyền huỷ mặt hàng vừa bấm sai";
+"two" = "Người sử dụng có quyền huỷ mặt hàng đã được đặt sai";
+"twozerofoureight" = "Người sử dụng được phép đặt đồ ăn ở bàn khác";
+"threetwo" = "Người sử dụng được quyền thay đổi mức giá hoặc giảm giá";
+"fourzeroninesix" = "Người sử dụng được phép sửa lại cách trả tiền";
+"eight" = "Người sử dụng có quyền kết thúc cuối ngày";
+"onesix" = "Người sử dụng có quyền thoát hệ thống";
+"updatepermissionmsg" = "Update permission success";
+"name" = "Tên";
+"password" = "Mật mã";
+"nfc" = "Dữ liệu NFC";
+"save" = "Save";

@@ -1,0 +1,72 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '12.0'
+
+target 'remview' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for iService
+  # Rx
+  pod 'RxSwift', '6.2.0'
+  pod 'RxCocoa', '6.2.0'
+
+  # Alamofire networking
+  pod 'Alamofire', '5.4'
+
+  # Json Mapper
+  pod 'ObjectMapper', '3.5'
+
+  # Sqlite
+  pod 'GRDB.swift', '5.8.0'
+  pod 'RxGRDB'
+  
+  # Dependency Injection
+  pod "Resolver"
+
+  #Auto layout
+  pod 'SnapKit', '5.0.0'
+  
+  # Networking
+  pod 'RxAlamofire', '6.1'
+  
+  # Firebase auth
+  pod 'Firebase/Auth'
+  
+  # Image loader
+  pod 'Kingfisher', '~> 6.0'
+  
+  
+  # Dropdown
+  pod 'DropDown'
+  
+  # Crop lib
+  pod 'CropViewController'
+  
+  # Google map
+  pod 'GoogleMaps'
+  
+  pod 'MKRingProgressView'
+  
+  # observe network
+  use_frameworks!
+  pod 'ReachabilitySwift'
+  
+  # web socket
+  pod 'Starscream', '~> 4.0.0'
+  
+  # qrcode
+  pod 'QRCodeReader.swift', '~> 10.1.0'
+  
+  # date range lib
+  pod 'Fastis', '~> 1.0.0'
+end
+
+# https://stackoverflow.com/questions/69276367/command-compileswiftsources-failed-with-a-nonzero-exit-code-xcode-13
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+    # some older pods don't support some architectures, anything over iOS 11 resolves that
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+    end
+  end
+end

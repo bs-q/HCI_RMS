@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sf_bold.otf">
+            <string>SFCompactDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Order Table View Controller-->
+        <scene sceneID="yWN-m6-8YC">
+            <objects>
+                <tableViewController storyboardIdentifier="OrderTableViewController" id="B6i-dS-qkb" customClass="OrderTableViewController" customModule="remview" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" id="8yQ-Sv-BR0">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="763.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="B6i-dS-qkb" id="UET-f1-VNf"/>
+                            <outlet property="delegate" destination="B6i-dS-qkb" id="Phv-Xs-wE4"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WWw-W3-mwv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2783" y="-449"/>
+        </scene>
+        <!--Order View Controller-->
+        <scene sceneID="48y-7e-DdK">
+            <objects>
+                <viewController storyboardIdentifier="OrderViewController" id="TYw-BD-rbf" customClass="OrderViewController" customModule="remview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Nn-Ny-eYN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="945"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Lu-gC-JAF">
+                                <rect key="frame" x="0.0" y="44" width="375" height="54"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="rK3-Rc-uG2">
+                                        <rect key="frame" x="10" y="14" width="26" height="26"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="26" id="EWO-7O-yW7"/>
+                                            <constraint firstAttribute="height" constant="26" id="qbr-pz-v2C"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="O2p-T8-ehM" appends="YES" id="3z4-xt-0zi"/>
+                                        </connections>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ih-qO-Foc">
+                                        <rect key="frame" x="163" y="15" width="49" height="24"/>
+                                        <fontDescription key="fontDescription" name="SFCompactDisplay-Bold" family="SF Compact Display" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="header_background"/>
+                                <constraints>
+                                    <constraint firstItem="rK3-Rc-uG2" firstAttribute="leading" secondItem="4Lu-gC-JAF" secondAttribute="leading" constant="10" id="Bec-Gf-Bf7"/>
+                                    <constraint firstAttribute="height" constant="54" id="KKY-8j-1wE"/>
+                                    <constraint firstItem="rK3-Rc-uG2" firstAttribute="centerY" secondItem="4Lu-gC-JAF" secondAttribute="centerY" id="XMA-Be-buv"/>
+                                    <constraint firstItem="5Ih-qO-Foc" firstAttribute="centerX" secondItem="4Lu-gC-JAF" secondAttribute="centerX" id="eae-9s-Zdg"/>
+                                    <constraint firstItem="5Ih-qO-Foc" firstAttribute="centerY" secondItem="4Lu-gC-JAF" secondAttribute="centerY" id="vYJ-Ba-Qfp"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e47-24-VSc">
+                                <rect key="frame" x="10" y="137.5" width="355" height="763.5"/>
+                                <connections>
+                                    <segue destination="B6i-dS-qkb" kind="embed" identifier="OrderTableViewController" id="PIU-xs-ngE"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selling list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cao-f5-j2I">
+                                <rect key="frame" x="10" y="108" width="355" height="19.5"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Bold" family="SF Compact Display" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zp1-aW-myz"/>
+                        <color key="backgroundColor" name="main_background"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="cao-f5-j2I" firstAttribute="leading" secondItem="zp1-aW-myz" secondAttribute="leading" constant="10" id="345-rS-V18"/>
+                            <constraint firstItem="e47-24-VSc" firstAttribute="leading" secondItem="5Nn-Ny-eYN" secondAttribute="leading" constant="10" id="3LD-CR-3mU"/>
+                            <constraint firstAttribute="trailing" secondItem="4Lu-gC-JAF" secondAttribute="trailing" id="Rsa-S8-7OM"/>
+                            <constraint firstItem="4Lu-gC-JAF" firstAttribute="leading" secondItem="5Nn-Ny-eYN" secondAttribute="leading" id="SHq-Uv-IKG"/>
+                            <constraint firstItem="cao-f5-j2I" firstAttribute="top" secondItem="4Lu-gC-JAF" secondAttribute="bottom" constant="10" id="VSc-SW-XmT"/>
+                            <constraint firstItem="zp1-aW-myz" firstAttribute="trailing" secondItem="cao-f5-j2I" secondAttribute="trailing" constant="10" id="ZuD-aS-yR5"/>
+                            <constraint firstItem="e47-24-VSc" firstAttribute="top" secondItem="cao-f5-j2I" secondAttribute="bottom" constant="10" id="abj-Ir-lFM"/>
+                            <constraint firstItem="zp1-aW-myz" firstAttribute="bottom" secondItem="e47-24-VSc" secondAttribute="bottom" constant="10" id="bbK-wn-W30"/>
+                            <constraint firstAttribute="trailing" secondItem="e47-24-VSc" secondAttribute="trailing" constant="10" id="iGu-rg-iL3"/>
+                            <constraint firstItem="4Lu-gC-JAF" firstAttribute="top" secondItem="zp1-aW-myz" secondAttribute="top" id="jBf-db-bqT"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="945"/>
+                    <connections>
+                        <outlet property="orderList" destination="cao-f5-j2I" id="3Et-Sb-8WU"/>
+                        <outlet property="restaurantName" destination="5Ih-qO-Foc" id="Rdf-8s-i0g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6BH-9j-Yld" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="O2p-T8-ehM">
+                    <connections>
+                        <action selector="back:" destination="TYw-BD-rbf" id="F39-hF-Ude"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-3505.072463768116" y="-424.21875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="12" height="11"/>
+        <namedColor name="header_background">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="main_background">
+            <color red="0.13300000131130219" green="0.13300000131130219" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
